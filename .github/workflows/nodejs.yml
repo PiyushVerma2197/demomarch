@@ -31,6 +31,9 @@ jobs:
         aws-secret-access-key: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
         aws-region: us-east-1
 
+    - name: Test AWS credentials
+      run: aws sts get-caller-identity
+
     - name: Sync S3 bucket
       run: aws s3 sync ./build s3://${{ secrets.S3_BUCKET_NAME }} --delete
 
