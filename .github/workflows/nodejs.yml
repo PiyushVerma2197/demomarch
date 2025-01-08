@@ -27,8 +27,8 @@ jobs:
     - name: Deploy to S3
       uses: aws-actions/configure-aws-credentials@v2
       with:
-        aws-access-key-id: AKIAWFIPTJP3GCP6K3TT
-        aws-secret-access-key: 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
+        aws-access-key-id: ${{ secrets.AWS_ACCESS_KEY_ID }}
+        aws-secret-access-key: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
         aws-region: us-east-1
 
     - name: Sync S3 bucket
