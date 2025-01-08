@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "main": "index.js",
  "scripts": {
-  "test": "echo 'Run tests here' && exit 0"
+  "test": "echo 'Run tests here' && exit 0",
   "build": "echo 'Build process runs here' && exit 0"
 }
 ,
