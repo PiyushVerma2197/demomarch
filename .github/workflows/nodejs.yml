@@ -35,5 +35,5 @@ jobs:
       run: aws sts get-caller-identity
 
     - name: Sync to S3
-      run: aws s3 cp ./index.html s3://kattybucket1 --delete
+      run: aws s3 cp ./index.html s3://kattybucket1 
 
